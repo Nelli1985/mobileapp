@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOG</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/coraltheme/themes/Coral.css" />
+        <link rel="stylesheet" href="css/coraltheme/themes/Coral.min.css" />
+        <link rel="stylesheet" href="css/coraltheme/themes/jquery.mobile.icons.min.css" />
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <div data-role="page" id="pageone">
+                <h4 class="text">GUESS THE </h4>
+                <h4 class="text">DOG</h4>
+                <h4 class="text">BREED</h4>
+            
+            <div data-role="content">
+                <form action="#pageone" method="get">
+                    <a href="#pagetwo" data-role="button" data-transition="none" data-inline="true">START</a>
+                </form>
+            </div>
+
+            <img class="img" src="img/labrador.jpg" alt="labrador">
+        </div>
+
+        <div data-role="page" id="pagetwo">
+            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
+            <h4 class="text2">DOG BREED</h4>
+
+            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+        
+            <p>Which difficulty would you like to play?</p>
+            <div data-role="content">
+                <form action="#pageone" method="get">
+                    <a href="#pagethree" data-role="button" data-transition="none">EASY</a>
+                    <a href="#pagefour" data-role="button" data-transition="none">MEDIUM</a>
+                    <a href="#pagefive" data-role="button" data-transition="none">HARD</a>
+                </form>
+            </div>
+
+            <img class="img" src="img/dog.jpg" alt="dog">
+        </div>
+
+        <div data-role="page" id="pagethree">
+            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
+            <h4 class="text2">DOG BREED</h4>
+
+            
+            
+            <p>Which difficulty would you like to play?</p>
+            <div data-role="content">
+                <form action="#pageone" method="get">
+                       
+                </form>
+            </div>
+    
+            <img class="img" src="img/dog.jpg" alt="dog">
+        </div>
+    </body>
+</html>
+    
