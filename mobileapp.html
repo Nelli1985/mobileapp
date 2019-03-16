@@ -17,58 +17,57 @@
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head>
 
-    <body>
-        <!-- GIT TEST -->
+    <body class="body">
         <div data-role="page" id="pageone">
-            <div class="oval">
+           <img class="img_cover" src="img/bg1.png" alt="bg1">
+            <div class="oval-text">
                 <h4 class="text white">GUESS THE </h4>
-                <h4 class="text white"><img class="smallpaw" src="img/paw.png" alt="whitepaw">DOG</h4>
+                <img class="smallpaw" src="img/paw.png" alt="whitepaw">
+                <h4 class="text white">DOG</h4>
                 <h4 class="text white">BREED</h4>
             </div>
 
-            <div data-role="content">
+            <div class="start_btn" data-role="content">
                 <form action="#pageone" method="get">
-                    <a href="#pagetwo" data-role="button" data-transition="none" data-mini="true">START</a>
+                    <a href="#pagetwo" data-role="button" data-transition="none" data-mini="true" style="color: #BC4D12; font-size: 1.25em; border-radius: 50px;">START</a>
                 </form>
-            </div>
-
-            <img class="img" src="img/labrador.jpg" alt="labrador">
+            </div>            
         </div>
 
         <div data-role="page" id="pagetwo">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+        <img class="img_cover" src="img/bg2.png" alt="bg2">
+           <div class="oval-text2">
+           	<a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>
+			
         
-            <p>Which difficulty would you like to play?</p>
+            <span style="font-size: 0.55em;">Which difficulty would you like to play?</span>
+            </div>
             <div data-role="content">
                 <form action="#pagetwo" method="get">
-                    <a href="#easy1" data-role="button" data-transition="none"  data-mini="true">EASY</a>
-                    <a href="#medium1" data-role="button" data-transition="none"  data-mini="true">MEDIUM</a>
-                    <a href="#hard1" data-role="button" data-transition="none"  data-mini="true">HARD</a>
+                    <a href="#easy1" class="btns" data-role="button" data-transition="none"  data-mini="true" style="color: #BC4D12; font-size: 1.25em; border-radius: 50px;">EASY</a>
+                    <a href="#medium1" class="btns" data-role="button" data-transition="none"  data-mini="true" style="color: #BC4D12; font-size: 1.25em; border-radius: 50px;">MEDIUM</a>
+                    <a href="#hard1" class="btns" data-role="button" data-transition="none"  data-mini="true" style="color: #BC4D12; font-size: 1.25em; border-radius: 50px;">HARD</a>
                 </form>
             </div>
 
-            <img class="img" src="img/dog.jpg" alt="dog">
         </div>
 
         <!--EASY-->
         <div data-role="page" id="easy1">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
 
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-
-            <p>This dog is a breed of small hound that is similar 
-                in appearance to the much larger foxhound. This dog
-                is a scent hound, developed primarily for hunting 
-                hare. With a great sense of smell and superior 
-                tracking instinct, this breed is employed as detection dog
-                for prohibited agricultural imports and foodstuffs in 
-                quarantine around the world. The breed is intelligent 
-                but single-minded. It is a popular pet due to its size, 
-                good temper, and lack of inherited health problems.</p>
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">This dog is a breed of small hound that is similar in appearance to the much larger foxhound. This dog is a scent hound.</span>
+            	</div>
+			</div>
             
             <img class="img" src="img/easy/Beagle.jpg" alt="beagle">
             <div data-role="content">
@@ -80,20 +79,17 @@
             </div>
         </div>
         <div data-role="page" id="easy2">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
+           <img class="img_cover" src="img/bg3.png" alt="bg3">
 
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-    
-            <p>This breed is a medium-sized, short-haired breed of dog, developed in Germany. 
-                The coat is smooth and tight-fitting; colors are fawn or brindled, 
-                with or without white markings, and white. These dogs are brachycephalic 
-                (they have broad, short skulls), have a square muzzle, mandibular 
-                prognathism (an underbite), very strong jaws, and a powerful bite 
-                ideal for hanging on to large prey. The breed was bred from the Old English 
-                Bulldog and the now extinct Bullenbeisser which became extinct by 
-                crossbreeding rather than by a decadence of the breed. </p>
-                
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">Medium-sized, short-haired breed, developed in Germany. Bred from the Old English Bulldog and the now extinct Bullenbeisser which became extinct by crossbreeding.</span>
+            	</div>
+			</div>
             <img class="img" src="img/easy/Boxer.jpg" alt="boxer">
             <div data-role="content">
                 <form action="#easy2" method="get">
@@ -105,17 +101,18 @@
         </div>
 
         <div data-role="page" id="easy3">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-        
-            <p>These dogs are the smallest breed recognized by some kennel clubs. 
-                Dogs may be identified as either "apple head" or "deer head", particularly in the United States. 
-                Apple heads have rounded heads, close-set eyes, and relatively short ears and legs. 
-                Deer heads have flat-topped heads, more widely set eyes, larger ears, and longer, more slender legs. 
-                While deer heads were popular in the mid-20th century, current breed standards defined by registries 
-                such as the AKC specify the apple-head conformation. </p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">These dogs are the smallest breed recognized by some kennel clubs. 
+                	Dogs may be identified as either "apple head" or "deer head", particularly in the <br> United States.</span>
+            	</div>
+			</div>
                     
             <img class="img" src="img/easy/Chihuahua.jpg" alt="chihuahua">
             <div data-role="content">
@@ -128,19 +125,18 @@
         </div>
 
         <div data-role="page" id="easy4">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-            
-            <p>There are two breeds of these dogs, the Cardigan and the Pembroke, 
-                each named for the county in Wales where it originated. The dogs share several similar traits, 
-                such as their coats, which are water resistant and shed on average twice a year. 
-                The body of the Cardigan is slightly longer than that of the Pembroke; both breeds have short legs, 
-                placing their bodies close to the ground. But they are not as square in outline as a typical Terrier, 
-                or have an elongated body as great as that of a Dachshund. There are only minor differences in the shape 
-                of the head, both appear fox-like. It can take a few days following birth for the true colour of the coat to appear, 
-                and this is particularly evident in those with tricolour or black and tan markings.</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">There are two breeds of these dogs, the Cardigan and the Pembroke, 
+                each named for the county in Wales where it originated.</span>
+            	</div>
+			</div>
                         
             <img class="img" src="img/easy/Corgi.jpg" alt="corgi">
             <div data-role="content">
@@ -154,17 +150,17 @@
 
         <!--MEDIUM-->
         <div data-role="page" id="medium1">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-    
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                
-            <p>This breed is a large scent hound, originally bred for hunting deer, wild boar and, since the Middle Ages, 
-                for tracking people. Believed to be descended from hounds once kept at the Abbey of Saint-Hubert, 
-                Belgium, it is known to French speakers as the Chien de Saint-Hubert. This breed is famed for its ability 
-                to discern human scent over great distances, even days later. Its extraordinarily keen sense of smell is 
-                combined with a strong and tenacious tracking instinct, producing the ideal scent hound, and it is used by 
-                police and law enforcement all over the world to track escaped prisoners, missing people, and lost pets.</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">This breed is a large scent dog, originally bred for hunting deer, wild boar since the Middle Ages, for tracking people.</span>
+            	</div>
+			</div>
                             
             <img class="img" src="img/medium/Bloodhound.jpg" alt="bloodhound">
             <div data-role="content">
@@ -177,15 +173,18 @@
         </div>
 
         <div data-role="page" id="medium2">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-        
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                    
-            <p>This breed is a large Italian Molosser, which is closely related to the Neapolitan Mastiff. 
-                In name and form this breed predates its cousin the Neapolitan Mastiff. It is well muscled 
-                and less bulky than most other Mastiff breeds. The breed is known as a true and quite possibly 
-                the last of the coursing Mastiffs. </p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">This breed is a large Italian Molosser, which is closely related to the Neapolitan Mastiff. Muscled 
+                and less bulky than most other Mastiff breeds.</span>
+            	</div>
+			</div>
                                 
             <img class="img" src="img/medium/Cane Corso.jpg" alt="cane corso">
             <div data-role="content">
@@ -198,13 +197,17 @@
         </div>
 
         <div data-role="page" id="medium3">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-            
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                        
-            <p>This breed is a medium-to-large breed of dog, sometimes classified as a variety of the Shepherd dog 
-                rather than as a separate breed. The name is derived from the French name for the breed's</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">This breed is a medium-to-large breed of dog, sometimes classified as a variety of the Shepherd dog. Used as police dogs.</span>
+            	</div>
+			</div>
                                     
             <img class="img" src="img/medium/Belgian Malinois.jpg" alt="belgian malinois">
             <div data-role="content">
@@ -217,14 +220,18 @@
         </div>
 
         <div data-role="page" id="medium4">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-                
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                            
-            <p>This breed is a hound that is distinguished by its thick, fine, silky coat and its tail 
-                with a ring curl at the end. The breed is selectively bred for its unique features in 
-                the cold mountains. Its local name is Tāžī Spay or Sag-e Tāzī.</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">This breed is a hound that is distinguished by its thick, fine, silky coat and its tail with a ring curl at the end. The breed is selectively bred for its unique features in 
+                the cold mountains.</span>
+            	</div>
+			</div>
                                         
             <img class="img" src="img/medium/AfganHound.jpg" alt="afganhound">
             <div data-role="content">
@@ -238,14 +245,17 @@
 
         <!--HARD-->
         <div data-role="page" id="hard1">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-                    
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                                
-            <p>This breed is a breed of hunting dog. It was bred from stock that originated in central Africa. 
-                Most of the major kennel clubs in the English-speaking world place the breed in the hound group—more specifically, 
-                in the sighthound type.</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">Hunting breed. Bred from stock that originated in central Africa.               Most of the kennel clubs in the English-speaking world place the breed in the hound group—more specifically, in the sighthound type.</span>
+            	</div>
+			</div>
                                             
             <img class="img" src="img/hard/Basenji.jpg" alt="basenji">
             <div data-role="content">
@@ -258,14 +268,18 @@
         </div>
 
         <div data-role="page" id="hard2">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-                        
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                                    
-            <p>The breed, also called the Continental Toy Spaniel, is a breed of dog, of the spaniel type. 
-                One of the oldest of the toy spaniels, it derives its name from its characteristic butterfly-like 
-                look of the long and fringed hair on the ears. A dog with dropped ears is called a Phalène. </p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">One of the oldest of the toy spaniels, it derives its name from its characteristic butterfly-like 
+                look of the long and fringed hair on the ears.</span>
+            	</div>
+			</div>
                                                 
             <img class="img" src="img/hard/Papillon.jpg" alt="papillon">
             <div data-role="content">
@@ -278,15 +292,18 @@
         </div>
 
         <div data-role="page" id="hard3">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-                            
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                                        
-            <p>The breed is a powerful, independent and dominant breed, commonly aloof with strangers 
-                but affectionate with family members. As a breed, they are generally hardy, 
-                but they have been known to be susceptible to various genetic conditions and can be sensitive to certain drugs.</p>
-                                                    
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">The breed is a powerful, independent and dominant breed, commonly aloof with strangers but affectionate with family members.</span>
+            	</div>
+			</div>
+           
             <img class="img" src="img/hard/Akita.jpg" alt="akita">
             <div data-role="content">
                 <form action="#hard3" method="get">
@@ -298,13 +315,17 @@
         </div>
 
         <div data-role="page" id="hard4">
-            <h4 class="text2"><img src="img/favicon.ico" alt="paw" height="30" width="30"> GUESS THE </h4>
-            <h4 class="text2">DOG BREED</h4>
-                                
-            <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
-                                            
-            <p>The breedis a working and herding dog breed developed in the Scottish shepards for herding livestock, especially sheep. 
-                It was specifically bred for intelligence and obedience.</p>
+        <img class="img_cover" src="img/bg3.png" alt="bg3">
+                     
+           <div class="oval-text2">
+           <a href="#pageone" data-role="button" data-icon="home" data-iconpos="notext" style ="float: right;">Home</a>
+            	<h4 class="text2"> GUESS THE </h4>
+            	<img src="img/paw.png" alt="paw" height="30" width="30" style="position:absolute;">
+            	<h4 class="text2" style="padding-left: 10%;">DOG BREED</h4>			
+        		<div class="info">
+            		<span style="font-size: 0.55em; ">A working and herding dog breed developed in the Scottish shepards for herding livestock, especially sheep. It was specifically bred for intelligence and obedience.</span>
+            	</div>
+			</div>
                                                         
             <img class="img" src="img/hard/Border Collie.jpg" alt="border collie">
             <div data-role="content">
