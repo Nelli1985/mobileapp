@@ -2,13 +2,17 @@
     font-family: "Merriweather", Times, serif;
     margin: 0 auto;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.7em;
 }
 
 .text2 {
     font-family: "Merriweather", Times, serif;
     margin: 0 auto;
     font-size: 1em;
+}
+
+p {
+    font-size: 0.6em;
 }
 
 .white {
