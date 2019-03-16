@@ -2,7 +2,7 @@
     font-family: "Merriweather", Times, serif;
     margin: 0 auto;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .text2 {
@@ -11,7 +11,24 @@
     font-size: 1em;
 }
 
+.white {
+    color: white;
+}
+
 .img {
     width: 100%;
     height: auto;
-  }
+}
+
+.smallpaw {
+    height: 0.5em;
+}
+
+.oval {
+	height:10em;
+    width:100%;
+    border-radius: 0 0 10em 10em;
+    -moz-border-radius: 0 0 10em 10em;
+    -webkit-border-radius: 0 0 10em 10em;
+    background:rgb(207, 85, 3);
+}
