@@ -78,3 +78,15 @@ p {
 	padding-right: 3.5%;
 	line-height: 0.8;
 }
+
+#wrong:active {
+	text-shadow: none;
+	color: white;
+	background-color: #e03864;
+}
+
+#correct:active {
+	text-shadow: none;
+	color: white;
+	background-color: #42f47d;
+}
